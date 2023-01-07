@@ -36,9 +36,9 @@ body {
     cursor: pointer;
     z-index: 3;
 }
-.input[type=checkbox]:checked {
+/* .input[type=checkbox]:checked {
     counter-increment: game;
-}
+} */
 
 .info {
     display: flexbox;
@@ -50,17 +50,17 @@ body {
     top: 5%;
     text-align: center;
 }
-.info .text {
+.info span {
     color: rgb(182, 119, 43);
 }
-.info .text h4::after {
+/* .info .text h4::after {
     content: counter(game);
-}
-.text h1 {
+} */
+.title h1 {
     font-size: xx-large;
 }
 
-.layer-1 {
+.bunny-top-1 {
     position: absolute;
     z-index: 1;
     background-color: var(--background-layer);
@@ -70,7 +70,7 @@ body {
     right: 18%;
     animation: layer 1.2s ease-in-out infinite;
 }
-.layer-2 {
+.bunny-top-2 {
     position: absolute;
     z-index: 1;
     background-color: var(--background-layer);
@@ -107,7 +107,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.40);
 }
 
-.layer-4 {
+.bunny-middle {
     position: absolute;
     z-index: 4;
     background-color: var(--background-layer);
@@ -142,7 +142,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.40);
 }
 
-.layer-6 {
+.bunny-end {
     position: absolute;
     z-index: 6;
     background-color: var(--background-layer);
@@ -310,6 +310,7 @@ body {
     bottom: 10%;
 }
 .head {
+    cursor: pointer;
     z-index: 2;
     position: absolute;
     height: 90px;
