@@ -1,3 +1,4 @@
+const sound = new Audio('./click.mp3');
 let score = document.querySelector('.score > h4');
 let bunny1 = document.querySelector('#bunny1');
 let bunny2 = document.querySelector('#bunny2');
@@ -8,6 +9,7 @@ let total = 0;
 score.innerHTML = `Score: ${total}`;
 
 function bunnyClicked (){
+    sound.play();
     total++;
     score.innerHTML = `Score: ${total}`;
 }
